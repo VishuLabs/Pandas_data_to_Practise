@@ -1,0 +1,210 @@
+📥 Loading & Exploring the Data
+Load the dataset into a Pandas DataFrame.
+
+Display the first 10 rows.
+
+Show the shape of the DataFrame.
+
+Get a summary (.info()) of the dataset.
+
+Describe all numeric columns.
+
+List all column names and their data types.
+
+Check for missing values in each column.
+
+Count the total number of missing values in the dataset.
+
+Check for duplicate rows.
+
+Find duplicate email addresses.
+
+🧹 Data Cleaning
+Remove rows with duplicate emails.
+
+Fill missing salary values with the median salary.
+
+Drop rows with null notes.
+
+Replace missing notes with the string "No note available".
+
+Remove rows where Start Date is earlier than Date of Birth.
+
+Convert Review Scores from JSON string to Python list.
+
+Extract the number of review scores per employee into a new column.
+
+Extract the average review score into a new column.
+
+Replace boolean Is Active with 1/0 values.
+
+Ensure Salary is float and Employee ID is int.
+
+🧮 Filtering & Selection
+Select all employees from the "Engineering" department.
+
+Find employees earning more than ₹1,00,000.
+
+List employees who are inactive.
+
+Find employees whose notes mention the word "project".
+
+Select employees with review scores longer than 4 values.
+
+Find employees with missing salary or notes.
+
+List employees born after 1990.
+
+Find those who started in or after 2020.
+
+Filter employees whose salary is in the top 10%.
+
+Find all rows where Email is duplicated.
+
+🧾 Sorting & Indexing
+Sort employees by salary in descending order.
+
+Sort by start date, then by salary.
+
+Set Email as index.
+
+Reset index back to default.
+
+Select rows using .iloc[] for index 10–20.
+
+Select employees by a list of specific Employee IDs.
+
+Filter rows using query() for salary > 50K and active.
+
+Use .loc[] to fetch names and departments of top 5 earners.
+
+Sort by average review score.
+
+Identify the employee with the oldest Date of Birth.
+
+📆 Datetime Operations
+Extract year from Date of Birth.
+
+Extract month name from Start Date.
+
+Calculate employee age as of today.
+
+Find the employee(s) who joined earliest.
+
+Calculate employment duration (in years).
+
+Filter employees whose start year is before 2000.
+
+Count how many employees joined in each year.
+
+Plot a histogram of join years.
+
+Create a column to flag if someone joined before turning 18.
+
+Create a column that categorizes DOB into decades.
+
+🏷️ String Operations
+Extract domain name from Email.
+
+Find emails from Gmail, Yahoo, or Outlook.
+
+Convert all notes to lowercase.
+
+Count how many notes mention the word “client”.
+
+Remove leading/trailing whitespace in Notes.
+
+Create initials from the full name.
+
+Replace all emails ending with ".net" to ".com".
+
+Find all employees with last name “Smith”.
+
+Filter names that start with “A”.
+
+Count number of unique first names.
+
+🧾 Aggregation & GroupBy
+Count number of employees in each department.
+
+Average salary by department.
+
+Maximum and minimum review scores by department.
+
+Count active/inactive employees by department.
+
+Average number of review scores by department.
+
+Median salary of employees born after 1985, grouped by department.
+
+Percentage of active employees in each department.
+
+Group by number of review scores and calculate avg salary.
+
+Find the most common employee ID and its frequency.
+
+Count null notes by department.
+
+🧱 Reshaping
+Pivot table showing average salary by department and activity status.
+
+Create a pivot table with join year as rows, department as columns, and count of employees.
+
+Use melt() to unpivot a subset of the dataset.
+
+Use stack() and unstack() to explore reshaping.
+
+Create a crosstab of department vs. is_active.
+
+Transpose the first 5 rows of the dataset.
+
+Group by year of birth and count employees.
+
+Create a multi-index using Department and Start Year.
+
+Flatten the multi-index created above.
+
+Normalize salary by subtracting mean and dividing by std.
+
+🔍 Advanced Analysis
+Create a correlation matrix (only for numerical data).
+
+Identify salary outliers using IQR method.
+
+Plot distribution of salary using seaborn or matplotlib.
+
+Plot number of employees joined per year using a bar chart.
+
+Perform value counts on the number of review scores per employee.
+
+Identify any possible duplicate employees using fuzzy matching on names.
+
+Detect inconsistent or incorrect entries in Start Date.
+
+Plot a heatmap of department vs average review score.
+
+Create boxplot of salary by department.
+
+Perform rolling average of salary by join year.
+
+🔀 Merging & Joins (You’ll need helper data for these)
+Create another DataFrame with department head names and merge it.
+
+Merge with a DataFrame of bonus amounts by Employee ID.
+
+Perform left join on department to get headcount data.
+
+Join another dataset of average review scores by department.
+
+Merge with a dataset that maps email domains to companies.
+
+🛠️ Custom Scenarios
+Flag rows with logical inconsistency: Start Date < DOB.
+
+Create a new column Seniority based on Start Date.
+
+Create a KPI column: salary divided by average review score.
+
+Bin salary into low, medium, and high brackets.
+
+Export cleaned and filtered DataFrame (e.g., only active Engineering staff) to a new CSV.
